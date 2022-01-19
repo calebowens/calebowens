@@ -5,6 +5,7 @@
     "parcel": "^2.2.1"
   },
   "scripts": {
-    "deploy": "parcel build src/*.pug"
+    "deploy": "parcel build src/*.pug",
+    "watch": "parcel serve src/*.pug"
   }
 }
