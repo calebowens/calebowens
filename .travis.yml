@@ -1,0 +1,8 @@
+language: node_js
+node_js:
+  - "16"
+deploy:
+  provider: script
+  script: yarn && yarn deploy
+  on:
+    branch: main
