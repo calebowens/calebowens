@@ -23,6 +23,6 @@ jobs:
       - name: "Compile Pages"
         run: yarn deploy
       - name: "Deeeploy!"
-        with:
+        env:
           user_token: ${{ secrets.USER_TOKEN }}
-        run: yarn gh-pages -d dist -r https://$user_token@github.com/calebowens/calebowens.git"
+        run: yarn gh-pages -d dist -r https://%user_token%@github.com/calebowens/calebowens.git"
