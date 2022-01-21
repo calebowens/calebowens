@@ -1,0 +1,54 @@
+@import './theme.sass'
+@import './projects.sass'
+@import './header.sass'
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Slab&display=swap')
+
+body
+  display: flex
+
+  flex-direction: column
+
+  position: fixed
+  margin: 0
+  height: 100%
+  width: 100%
+  background-color: $background
+  scrollbar-width: thin
+  scrollbar-style: light
+
+*
+  box-sizing: border-box
+  font-family: 'Roboto Slab', serif
+
+p
+  font-size: 20px
+
+.page-container
+  display: flex
+
+  overflow: auto
+
+  flex-direction: column
+  align-items: center
+  flex-grow: 1
+
+  padding: 0px 10px
+  padding-bottom: 60px
+  border-top: 22px solid $secondary
+
+  > *
+    max-width: min(800px, 80vw)
+
+  > h1
+    font-size: 48px
+    width: 100%
+    margin-bottom: 0
+    margin-top: min(max(calc((100vw - 880px) / 2), 20px), 200px)
+
+@media only screen and (max-width: 600px)
+  .page-container
+    border: none
+
+    > *
+      max-width: 100%
+      padding: 5px

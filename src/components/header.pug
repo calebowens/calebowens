@@ -1,0 +1,9 @@
+header
+  h1 Caleb Owens
+  .header_buttons
+    mixin link(title, link)
+      a(href=link)= title
+
+    +link('About', './index.pug')
+    +link('Projects', './projects.pug')
+    +link('Contact', './contact.pug')
