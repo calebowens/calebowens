@@ -26,5 +26,5 @@ jobs:
         run: |
           git config --global user.email "Cocacola5010mc@gmail.com"
           git config --global user.name "Pipeline Runner, Caleb Owens"
-          echo 'www.calebowens.com' > ./CNAME
+          echo 'www.calebowens.com' > ./dist/CNAME
           yarn gh-pages -d dist -r https://${{ secrets.USER_TOKEN }}@github.com/calebowens/calebowens.git
