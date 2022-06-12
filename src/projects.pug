@@ -47,12 +47,25 @@ html
         it in React Native with expo so I can target mobile and web. I'm going for
         a Mobile First approach as to try and target wider audiences on their prefered
         platform.
-      +project('Twilight Peaks', 'Ruby, Firestore, Discord.js', '', './assets/twilight_peaks_icon.svg')
-        Twilight Peaks is an MMORPG that I've been working on to help me learn ruby
-        it a public facing API with the idea being that any player of the game can
-        write a client that suits their way of game play. With the restriction on gameplay
-        being that every action needs to happen in a transaction, I'm going to have
-        the game focused on interactions with game characters and items in the world
-        with less emphasis on player verses enemy conflicts. To make the game accessible
-        to a wider audiences however, I'm going to build a chat bot that wraps the game
-        API for the messaging service Discord through the Discord.js library.
+      +project('Web Element Composition Utility', 'TypeScript', 'https://www.npmjs.com/package/wecu')
+        WECU is a library that lets you create web components and compose them together 
+        using intuative object oriented patterns. The idea behind WECU is that it
+        lets the programmer take control of the program, with the user modifying the 
+        DOM on their own terms. WECU is based arround the idea that the GUI is bound 
+        to your data in the class, just how your actions are also. It results in
+        creating a nice abstraction over the DOM for implementing reactive behaviour 
+        without taking any control away from the programmer like a framework would.
+      +project('Maths Helper Libraries', 'TypeScript', 'https://www.npmjs.com/~calebowensperson')
+        I've been building libraries to aid different aspects of modeling systems in
+        JavaScript and TypeScript. Firstly there is my vectors library which defines
+        a generic length vectors implementation as well as 2, 3, and 4 dimensional
+        vectors. I've made use of these in building a ray marching demo for rendering
+        4D objects. Secondly is my gaussian ellimination library which is incredibly
+        helpful for solving liear simultanious equations and finding the inverses of
+        matricies. I made good use of this library in by ray marching demo also.
+      +project('Monads, Result, and Optional Library', 'TypeScript', 'https://www.npmjs.com/package/monads-co')
+        As part of another project I chose to write my own implementation of
+        monads in TypeScript which provides "free methods" after you implement
+        the minimal definition of each. I implemented a Optional and Result class
+        similar to the Rust programming language to help with various error and
+        exception handling in future projects.
